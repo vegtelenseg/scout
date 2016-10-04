@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Scoutz: Home</title>
+<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/carouselStyle.css">
+</head>
+<body>
+<!--This will provide some padding around the div and keep elements enclosed-->
+<!-- Collapsible Navigation Bar -->
+<div class="container">
+
+<!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
+<nav class="navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+      <!-- Button that toggles the navbar on and off on small screens -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+      <!-- Hides information from screen readers -->
+        <span class="sr-only"></span>
+
+        <!-- Draws 3 bars in navbar button when in small mode -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
+      <a class="navbar-brand pull-left" style="PADDING-TOP: 10px; PADDING-LEFT: 10px" href="#"><img height="30" width="50" src="https://a2ua.com/mic/mic-009.jpg"></a>
+    </div>
+
+      <!-- navbar-right will move the search to the right -->
+    <form class="navbar-form navbar-left" role="search">
+       <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search Scoutz">
+       </div>
+      <button type="submit" class="btn btn-default">Search</button>
+    </form>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Watch List <span class="sr-only">(current)</span></a></li>
+         <li><a href="#">Discover <span class="sr-only">(current)</span></a></li>
+         <li><a href="#">Charts <span class="sr-only">(current)</span></a></li>
+         <li><a href="#">Crowd Picks<span></span></a></li>
+         <li style="PADDING-LEFT:400px"><a href="#">Login<span class="sr-only">(current)</span></a></li>
+         <button style="MARGIN-TOP:8px" type="submit" class="btn btn-primary">Signup for free</button>
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Crowd Picks</a></li>
+            <li><a href="#">Charts</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Set Appointment</a></li>
+          </ul>
+        </li>-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<br>
+<!--The photo slide -->
+<div id="photoSlide" class="carousel slide" data-ride="carousel">
+	<!--How many slides of carousel do we need?? -->
+	<ol class="carousel-indicators">
+		<li data-target="#photoSlide" data-slide-to="1" class="active"></li>
+		<li data-target="#photoSlide" data-slide-to="2"></li>
+		<li data-target="#photoSlide" data-slide-to="3"></li>
+	</ol>
+	<!-- What text would we like have written on top of the slide? -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<div class="slide1">
+				<div class="carousel-caption outline">
+					<h1>FIND FRESH AND NEW TALENT, TODAY</h1>
+					<p class="outline">Do your talent scouting online, for free</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="slide2">
+				<div class="carousel-caption">
+					<h1>OFFERING ALL KINDS OF MUSICIANS</h1>
+					<p>No more hosting talent shows to source for talent</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="slide3">
+				<div class="carousel-caption">
+					<h1>UNDISCOVERED AND READY</h1>
+					<p>Stream music online and contacts its owners online. No hassle</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control" href="#photoSlide" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+	<a class="right carousel-control" href="#photoSlide" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

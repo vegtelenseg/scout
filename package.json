@@ -1,0 +1,18 @@
+{
+  "name": "scoutmusic",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A webapp to connect artists with record labels",
+  "main": "index.js",
+  "scripts": {
+    "test": "Node is working"
+  },
+  "author": "fshock",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "parseurl": "^1.3.1",
+    "session": "^0.1.0"
+  }
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Pt+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+<style type="text/css">
+body {
+  font-size: 52.5%;
+  font-family: arial, sans-serif;
+}
+#nttLogo{
+  height: 100px;
+  width: 100px;
+}
+#websiteTitle{
+  font-size: 10em;
+  vertical-align: middle;
+  font-family: 'Pacifico', cursive;
+  padding-left: 15px;
+  color: #191970;
+}
+#websiteSlogan{
+  font-size: 5.4em;
+}
+/* Carousel Styling */
+.slide1{
+  background-image: url('https://isntablog.files.wordpress.com/2013/03/29-img_3225.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('https://hughitb.files.wordpress.com/2010/12/therapy140_composite.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('http://buzzbands.la/wp-content/gallery/coachella2016-day2-andrew/4_SZA_NateWatters_003.JPG');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 3.4em;
+  font-family: 'Oswald', cursive;
+  color: #F9A825;
+  font-weight: 10;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+  font-family: 'sans-serif'
+  color: blue;
+}
+
+.outline {
+  fill: none;
+  stroke: red;
+  stroke-width:2px;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+</style>
