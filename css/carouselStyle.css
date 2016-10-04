@@ -9,9 +9,10 @@ body {
   font-size: 52.5%;
   font-family: arial, sans-serif;
 }
-#nttLogo{
-  height: 100px;
-  width: 100px;
+#scoutzLogo{
+  height: 34px;
+  width: 50px;
+  padding-bottom: 1px;
 }
 #websiteTitle{
   font-size: 10em;
@@ -45,12 +46,20 @@ body {
   background-position: center;
   background-size: cover;
 }
+.slide4
+{
+  background-image :url('http://eventinbali.com/wp-content/uploads/2016/07/97743e756484507f8b96c3af8db7830e-1030x689.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .carousel-caption h1{
   font-size: 3.4em;
   font-family: 'Oswald', cursive;
   color: #F9A825;
   font-weight: 10;
-  padding-bottom: .4em;
+  padding-bottom: .0em;
 }
 .carousel-caption p{
   font-size: 2em;
