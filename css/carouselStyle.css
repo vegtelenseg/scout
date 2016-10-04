@@ -50,6 +50,7 @@ body {
 {
   background-image :url('http://eventinbali.com/wp-content/uploads/2016/07/97743e756484507f8b96c3af8db7830e-1030x689.jpg');
   height: 500px;
+  margin-top: 12px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -65,13 +66,5 @@ body {
   font-size: 2em;
   font-family: 'sans-serif'
   color: blue;
-}
-
-.outline {
-  fill: none;
-  stroke: red;
-  stroke-width:2px;
-  stroke-dasharray: 2,2;
-  stroke-linejoin: round;
 }
 </style>
