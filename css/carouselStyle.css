@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans');
 @import url('https://fonts.googleapis.com/css?family=Pt+Sans');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 <style type="text/css">
 body {
@@ -57,14 +59,15 @@ body {
 }
 .carousel-caption h1{
   font-size: 3.4em;
-  font-family: 'Oswald', cursive;
+  font-family: 'Ubuntu', sans-serif;
   color: #F9A825;
   font-weight: 10;
   padding-bottom: .0em;
 }
 .carousel-caption p{
   font-size: 2em;
-  font-family: 'sans-serif'
-  color: blue;
+  font-family:'Abel', sans-serif;
+  color: #69F0AE;
+  font-weight: 100px;
 }
 </style>

@@ -1,3 +1,28 @@
+body
+{
+	background-image: url("https://cdn0.vox-cdn.com/uploads/chorus_asset/file/7105527/rez-infinite-ps4-screen13-us-05dec15.0.jpeg");
+	background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+footer
+{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+   /* Set the fixed height of the footer here */
+    height: 10px;
+    background-color: black;
+}
+.navbar-bottom {
+min-height: 300px;
+margin-top: 100px;
+background-color: #222;
+border-color: #080808;
+padding-bottom: 100px;
+padding-top: 35px;
+color:#FFFFFF;
+}
 .og-grid {
 	list-style: none;
 	padding: 20px 0;

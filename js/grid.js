@@ -342,7 +342,9 @@ var Grid = (function() {
 	Preview.prototype = {
 		create : function() {
 			// create Preview structure:
-			this.$title = $( '<h3></h3>' );
+			this.$title = $( '<h3>Song Title</h3>' );
+			this.$else = $( '<h3>Arist</h3>' );
+
 			this.$description = $( '<p></p>' );
 			this.$href = $( '<a href="#">Contact Artist</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
