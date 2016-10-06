@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -12,6 +13,13 @@ html {
 body {
   margin: 0;
 }
+    .Footer{
+        background-color:black;
+        height:50px;
+        color: white;
+        position: fixed;
+        width:100%;
+    }
 article,
 aside,
 details,
@@ -4617,6 +4625,24 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #fff;
   background-color: #080808;
 }
+
+.footer-height
+{
+  height: 7%;
+}
+
+.loc-player
+{
+  margin-top: 100;
+}
+.player-controls
+{
+    padding-left: 100;
+    padding-right: 100;
+    margin-top: 100px;
+    padding-bottom: 100;
+}
+
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
@@ -6235,7 +6261,7 @@ button.close {
   border-left-color: #fff;
 }
 .carousel {
-  position: relative;
+  position : relative;
   overflow-wrap: hidden;
 }
 .carousel-inner {
@@ -6693,8 +6719,10 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm {
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .hidden-sm
+  {
     display: none !important;
   }
 }
@@ -6756,3 +6784,82 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+#login-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 999;    
+  background: rgba(0,2,0,0.7);
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+
+/*--------------------*/
+
+#inputs input {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 13px 0;
+  width: 250px;
+  border: 1px solid white;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+}
+
+#inputs input:focus {
+  background-color: #fff;
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+/*--------------------*/
+
+#login #actions {
+  margin: -3px 0 0 0;
+}
+
+#login #submit {    
+  background-image: linear-gradient(top, #e97171, #d14545);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.9);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.0) inset;    
+  border: 1px solid rgba(125, 125, 125, 0.3);
+  float: right;
+  height: 40px;
+  padding: 0;
+  width: 100px;
+  cursor: pointer;
+  font: 14px Arial, Helvetica;
+  color: white;
+}
+
+
+
+#login #submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+#login #submit::-moz-focus-inner {
+  border: none;
+}
+
+#login label {
+  float: right;
+  line-height: 30px;
+}
+
+#login label input {
+  position: relative;
+  top: 20px;
+  right: 2px;
+}
