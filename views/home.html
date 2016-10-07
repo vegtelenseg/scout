@@ -11,7 +11,6 @@
 <link rel="stylesheet" type="text/css" href="../css/thumbnail.css">
 <link rel="stylesheet" type="text/css" href="../css/dist/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../css/carouselStyle.css">
-<!--<link rel="stylesheet" type="text/css" href="../css/player.css">-->
 <script src="../js/modernizr.custom.js"></script>
 <title>Scoutz: Home</title>
 </head>
@@ -53,21 +52,22 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Watch List <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Discover <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Charts <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Crowd Picks<span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
-        <li><a href="#"><span></span></a></li>
+        <li id="li-watchlist"><a href="#">Watch List <span class="sr-only">(current)</span></a></li>
+        <li id="li-discover"><a href="#">Discover <span class="sr-only">(current)</span></a></li>
+        <li id="li-crowdpicks"><a href="#">Crowd Picks<span></span></a></li>
+        <li id="li-circle"><a href="#">In Your Circle <span class="sr-only">(current)</span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <li><a><span></span></a></li>
+        <!-- SIGN IN FORM -->
         <li id="login"><a id="login-trigger" href="#">Log in<span class="sr-only">(current)</span></a>
           <div id="login-content">
             <form class="navbar-form navbar-right pull-right" role="search">
@@ -79,24 +79,28 @@
                 <input class="btn btn-primary" type="submit" id="submit" value="Log in">
               </fieldset>
             </form>
-          </div>                  
+          </div>  
         </li>
-              <button style="MARGIN-TOP:8px" type="submit" class="btn btn-primary">Signup for free</button>
+        <!-- SIGN UP -->
+        <li id="signup"><a id="signup-trigger" href="#">Sign up for free<span class="sr-only">(current)</span></a>
+          <div id="signup-content">
+            <form class="navbar-form" role="search">
+              <fieldset id="inputs">
+                <input id="firstname" type="text" name="firstname" placeholder="First Name" required> 
+                <input id="lastname" type="text" name="lastname" placeholder="Last Name" required>
+                <input type="text" name="alias" placeholder="Alias (stage name)">
+                <input type="text" name="username" placeholder="Username (You will use this to login)">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="province" placeholder="Province" required>
+              </fieldset>
+              <fieldset id="actions">
+                <input class="btn btn-primary pull-right" type="submit" id="submit" value="Sign Me Up!">
+              </fieldset>
+            </form>
+          </div>  
+        </li>
       </ul>
-      </div>
-</nav>
-        <!--<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Crowd Picks</a></li>
-            <li><a href="#">Charts</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Set Appointment</a></li>
-          </ul>
-        </li>-->
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
 </nav>
 </div>
 <br>
@@ -165,9 +169,9 @@
 	<a class="right carousel-control" href="#photoSlide" data-slide="next">
 	<span class="glyphicon glyphicon-chevron-right"></span>
 </div>
-
 <!-- Thumbnails -->
-<ul id="og-grid" class="og-grid">
+<div class="thumbnailContainer" id="div-watchlist">
+<ul id="ul-watchlist" class="og-grid">
 <li><a href="./"></a></li>
 <!-- NASTY C -->
   <li>
@@ -175,64 +179,97 @@
       <img class="thumbnail" src="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" alt="Nasty C">
     </a>
   </li>
-<!-- EMTEE -->
-  <li>
-    <a href="https://youtu.be/0ovckLh5PQ4" data-largesrc="http://hiphophub.co.za/wp-content/uploads/2016/06/emtee-to-rappers.jpg" data-title="eMtee" data-description='Mthembeni Ndevu (born September 17, 1992), better known by his stage name eMtee, is a South African hip hop musician and record producer. He is best known for his début hit single, "Roll Up" and currently signed to Ambitiouz Entertainment, a South African independent record label, with his album Avery recenctly being certified platinum by RISA on 1st July 2016.'>
-      <img class="thumbnail" src="http://hiphophub.co.za/wp-content/uploads/2016/06/emtee-to-rappers.jpg" alt="eMtee">
-    </a>
-  </li>
-  <!-- RICKY RICK -->
-  <li>
-    <a href="../" data-largesrc="http://www.youthvillage.co.za/wp-content/uploads/2014/07/Riky-Featured.jpg" data-title="Ricky-Rick" data-description="Rikhado Makhado (born 20 July 1987), better known by his stage name Riky Rick but recently changed to King Kotini, is a South African rapper, actor, writer, composer and record producer. He was born in KwaMashu, KwaZulu-Natal. His debut studio album Family Values was released on April 3, 2015. He is signed to his own independent label and record company, Makhado Makhado Agency. He was educated at Hilton College.">
-    <img class="thumbnail" src="http://www.youthvillage.co.za/wp-content/uploads/2014/07/Riky-Featured.jpg" alt="Ricky Rick"/>
-    </a>
-  </li>
-  <!-- MARAZA -->
-  <li>
-    <a href="../" data-largesrc="https://i.ytimg.com/vi/NQDjpLzr_AQ/maxresdefault.jpg" data-title="Maraza" data-description="25-year-old South African singer/rapper/producer/poet MarazA (born S’phamandla Mhlongo) started out as a young emcee in the Jozi and KZN battle scenes. Previously a member of the hip-hop outfit Jus Dat!, MarazA stepped out on his own this year with the release of his debut solo album, Smithsonian One in April, and its smooth, radio friendly singles “Siyadlala,” “Fresh Out,” and most recently “Amalunde.” In his capacity as a producer, MarazA was also a pivotal force behind one of the most overlooked releases of 2013, Mashayabhuqe KaMamba‘s outstanding introduction to Digital Maskandi, The Black Excellence Show. The whole six-track EP (with the exception of “Afrikvn Lordz”) was recorded at MarazA‘s Dionysys Recordings in Yoeville. Additionally, MarazA lends his vocals to the EP’s warped maskandi opening, “Deep End.”">
-    <img class="thumbnail" src="https://i.ytimg.com/vi/NQDjpLzr_AQ/maxresdefault.jpg" alt="Maraza"/>
-    </a>
-  </li>
-  <!-- NASTY C -->
-  <li>
-    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-title="Nasty C" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
       <img class="thumbnail" src="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" alt="Nasty C">
     </a>
   </li>
-
-<ul id="og-grid" class="og-grid">
-<li><a href="./"></a></li>
-<!-- NASTY C -->
-  <li>
-    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-title="Nasty C" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
       <img class="thumbnail" src="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" alt="Nasty C">
     </a>
   </li>
-<!-- EMTEE -->
-  <li>
-    <a href="https://youtu.be/0ovckLh5PQ4" data-largesrc="http://hiphophub.co.za/wp-content/uploads/2016/06/emtee-to-rappers.jpg" data-title="eMtee" data-description='Mthembeni Ndevu (born September 17, 1992), better known by his stage name eMtee, is a South African hip hop musician and record producer. He is best known for his début hit single, "Roll Up" and currently signed to Ambitiouz Entertainment, a South African independent record label, with his album Avery recenctly being certified platinum by RISA on 1st July 2016.'>
-      <img class="thumbnail" src="http://hiphophub.co.za/wp-content/uploads/2016/06/emtee-to-rappers.jpg" alt="eMtee">
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" alt="Nasty C">
     </a>
   </li>
-  <!-- RICKY RICK -->
-  <li>
-    <a href="../" data-largesrc="http://www.youthvillage.co.za/wp-content/uploads/2014/07/Riky-Featured.jpg" data-title="Ricky-Rick" data-description="Rikhado Makhado (born 20 July 1987), better known by his stage name Riky Rick but recently changed to King Kotini, is a South African rapper, actor, writer, composer and record producer. He was born in KwaMashu, KwaZulu-Natal. His debut studio album Family Values was released on April 3, 2015. He is signed to his own independent label and record company, Makhado Makhado Agency. He was educated at Hilton College.">
-    <img class="thumbnail" src="http://www.youthvillage.co.za/wp-content/uploads/2014/07/Riky-Featured.jpg" alt="Ricky Rick"/>
-    </a>
-  </li>
-  <!-- MARAZA -->
-  <li>
-    <a href="../" data-largesrc="https://i.ytimg.com/vi/NQDjpLzr_AQ/maxresdefault.jpg" data-title="Maraza" data-description="25-year-old South African singer/rapper/producer/poet MarazA (born S’phamandla Mhlongo) started out as a young emcee in the Jozi and KZN battle scenes. Previously a member of the hip-hop outfit Jus Dat!, MarazA stepped out on his own this year with the release of his debut solo album, Smithsonian One in April, and its smooth, radio friendly singles “Siyadlala,” “Fresh Out,” and most recently “Amalunde.” In his capacity as a producer, MarazA was also a pivotal force behind one of the most overlooked releases of 2013, Mashayabhuqe KaMamba‘s outstanding introduction to Digital Maskandi, The Black Excellence Show. The whole six-track EP (with the exception of “Afrikvn Lordz”) was recorded at MarazA‘s Dionysys Recordings in Yoeville. Additionally, MarazA lends his vocals to the EP’s warped maskandi opening, “Deep End.”">
-    <img class="thumbnail" src="https://i.ytimg.com/vi/NQDjpLzr_AQ/maxresdefault.jpg" alt="Maraza"/>
-    </a>
-  </li>
-  <!-- NASTY C -->
-  <li>
-    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-title="Nasty C" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
       <img class="thumbnail" src="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" alt="Nasty C">
     </a>
   </li>
 </ul>
+</div>
+
+<div class="thumbnailContainer" id="div-crowdpicks">
+
+  <!-- THIS IS WHERE THE THUMBNAILS FOR CROWD PICKED MUSIC GO -->
+<ul id="ul-crowdpicks" class="og-grid">
+<li><a href="./"></a></li>
+<!-- 50 Cent -->
+  <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://static.nanopress.it/nano2013/fotogallery/625X0/97243/50-cent.jpg" alt="Nasty C">
+    </a>
+  </li>
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://static.nanopress.it/nano2013/fotogallery/625X0/97243/50-cent.jpg" alt="Nasty C">
+    </a>
+  </li>
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://static.nanopress.it/nano2013/fotogallery/625X0/97243/50-cent.jpg" alt="Nasty C">
+    </a>
+  </li>
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://static.nanopress.it/nano2013/fotogallery/625X0/97243/50-cent.jpg" alt="Nasty C">
+    </a>
+  </li>
+    <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://static.nanopress.it/nano2013/fotogallery/625X0/97243/50-cent.jpg" alt="Nasty C">
+    </a>
+  </li>
+</ul>
+</div>
+<div class="thumbnailContainer" id="div-discover">
+  
+  <!-- THIS IS WHERE THE THUMBNAILS FOR ALL MUSIC GO -->
+<ul id="ul-discover" class="og-grid">
+<li><a href="./"></a></li>
+<!-- NASTY C -->
+ <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://ih0.redbubble.net/image.87561988.7189/mp,550x550,gloss,ffffff,t.3u2.jpg" alt="Nasty C">
+    </a>
+  </li>
+   <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://ih0.redbubble.net/image.87561988.7189/mp,550x550,gloss,ffffff,t.3u2.jpg" alt="Nasty C">
+    </a>
+  </li>
+   <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://ih0.redbubble.net/image.87561988.7189/mp,550x550,gloss,ffffff,t.3u2.jpg" alt="Nasty C">
+    </a>
+  </li>
+   <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://ih0.redbubble.net/image.87561988.7189/mp,550x550,gloss,ffffff,t.3u2.jpg" alt="Nasty C">
+    </a>
+  </li>
+   <li>
+    <a href="https://youtu.be/0T4LM2fWPL4" data-largesrc="http://www.sundayworld.co.za/lifestyle/2016/05/03/nastyc.jpg/RESIZED/Big/Nastyc.jpg" data-description='Nsikayesizwe David Ngcobo (born 11 February 1997), better known by his stage name Nasty C, is a South African hip hop musician, songwriter and record producer. He is most known for the single "Way It Go" by DJ Switch featuring Tumi and Youngsta, as well as the well-received remix to his single "Juice Back", which features Davido and Cassper Nyovest. He was the youngest recipient for an award at the 2015 South African Hip Hop Awards, namely the Best Freshman Award.'>
+      <img class="thumbnail" src="http://ih0.redbubble.net/image.87561988.7189/mp,550x550,gloss,ffffff,t.3u2.jpg" alt="Nasty C">
+    </a>
+  </li>
+</ul>
+</div>
+
+
 <!-- THE FOOTER -->
 <nav class="navbar navbar-inverse navbar-fixed-bottom navbar-bottom" style="padding:2px 0 3px 0">
   <div class="container">
@@ -243,11 +280,11 @@
       </div>
   </div>
 </nav>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="../js/grid.js"></script>
 <script>
+// ADD MORE THUMBNAIL ITEMS
   $(function()
   {
     Grid.init();
@@ -257,16 +294,88 @@
         return false;
     });
   });
-  $(document).ready(function(){
-  $('#login-trigger').click(function(){
-    $(this).next('#login-content').slideToggle();
-    $(this).toggleClass('active');          
-    
-    if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
-      else $(this).find('span').html('&#x25BC;')
+
+// TOGGLE THE DROP-DOWN MENU WHEN 'LOGIN' IS CLICKED
+var hasToggled = 0;
+$(document).ready(function()
+{
+    $('#li-watchlist').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#ul-watchlist").offset().top
+    }, 500);
+    });
+    $('#li-discover').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#ul-discover").offset().top
+    }, 500);
+    });
+    $('#li-crowdpicks').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#ul-crowdpicks").offset().top
+    }, 500);
+    });
+    $('#login-trigger').click(function()
+    {
+      if (!hasToggled)
+      {
+        $(this).next('#login-content').slideToggle();
+        hasToggled = 1;
+        $(this).toggleClass('active');          
+        if ($(this).hasClass('active'))
+            $(this).find('span').load('&#x25B2;')
+        else
+            $(this).find('span').load('&#x25BC;')
+      }
     })
+    $('#signup-trigger').click(function()
+    {
+      if (!hasToggled)
+      {
+        $(this).next('#signup-content').slideToggle();
+        hasToggled = 1;
+        $(this).toggleClass('active');          
+        if ($(this).hasClass('active'))
+            $(this).find('span').load('&#x25B2;')
+        else
+            $(this).find('span').load('&#x25BC;')
+      }
+    });
+// FADE OUT THE ACTIVE LOGIN WINDOW IF NOT IN USE
+    var screen = $(window);
+    var scroll_pos = screen.scrollTop();
+    screen.scroll(function()
+    {
+      if(((screen.scrollTop() > scroll_pos) && scroll_pos > 430))
+      {
+          $('#login-content').fadeOut();
+          $('#signup-content').fadeOut();
+          hasToggled = 0;
+      }
+      scroll_pos = screen.scrollTop();
+    });
+// FADE OUT THE ACTIVE LOGIN WINDOW IS THE BODY IS CLICKED
+    $(document).mouseup(function(e)
+    {
+        var container = $('#login-content');
+        var container2 = $('#signup-content');
+
+        if ((!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0)) // ... nor a descendant of the container
+        {
+            container.fadeOut();
+            hasToggled = 0;
+        }
+        if ((!container2.is(e.target) // if the target of the click isn't the container...
+            && container2.has(e.target).length === 0))
+        {
+            container2.fadeOut();
+            hasToggled = 0;
+        }
+    });
 });
-    </script> 
-<script type="text/javascript" src="../js/player.js"></script>
+</script> 
 </body>
 </html>

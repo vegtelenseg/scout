@@ -4626,23 +4626,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #080808;
 }
 
-.footer-height
-{
-  height: 7%;
-}
-
-.loc-player
-{
-  margin-top: 100;
-}
-.player-controls
-{
-    padding-left: 100;
-    padding-right: 100;
-    margin-top: 100px;
-    padding-bottom: 100;
-}
-
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
@@ -6829,12 +6812,12 @@ button.close {
   background-image: linear-gradient(top, #e97171, #d14545);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 6px;
   text-shadow: 0 1px 0 rgba(0,0,0,.9);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.0) inset;    
   border: 1px solid rgba(125, 125, 125, 0.3);
   float: right;
-  height: 40px;
+  height: 30px;
   padding: 0;
   width: 100px;
   cursor: pointer;
@@ -6862,4 +6845,42 @@ button.close {
   position: relative;
   top: 20px;
   right: 2px;
+}
+
+.footer-height
+{
+  height: 7%;
+}
+
+.loc-player
+{
+  margin-top: 100;
+}
+.player-controls
+{
+    padding-left: 100;
+    padding-right: 100;
+    margin-top: 100px;
+    padding-bottom: 100;
+}
+
+#signup-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 999;    
+  background: rgba(0,2,0,0.7);
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,10);
+  border-radius: 3px 0 3px 3px;
+}
+
+.thumbnailContainer
+{
+  padding-right:  15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
