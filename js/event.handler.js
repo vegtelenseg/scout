@@ -88,4 +88,9 @@ $(document).ready(function()
             hasToggled = 0;
         }
     });
+    $('#sl1art').click(function(e)
+    {
+        e.preventDefault();
+        alert('THis has been clicked');
+    });
 });

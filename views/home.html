@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="//load.sumome.com/" data-sumo-site-id="2c6860dde32f71d86a30283c4427c0d46f8cd1c05c4ab4866efcfd2ea78a157f" async="async"></script>
 <meta charset="UTF-8">
 <!-- If IE use the latest rendering engine -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,10 +71,10 @@
         <!-- SIGN IN FORM -->
         <li id="login"><a id="login-trigger" href="#">Log in<span class="sr-only">(current)</span></a>
           <div id="login-content">
-            <form class="navbar-form navbar-right pull-right" role="search">
+            <form action="../php/login.php" method="post" class="navbar-form navbar-right pull-right" role="search">
               <fieldset id="inputs">
-                <input id="username" type="email" name="Email" placeholder="Your email address" required>   
-                <input id="password" type="password" name="Password" placeholder="Password" required>
+                <input id="lmailId" type="email" name="email" placeholder="Your email address" required>   
+                <input id="lpassId" type="password" name="password" placeholder="Password" required>
               </fieldset>
               <fieldset id="actions">
                 <input class="btn btn-primary" type="submit" id="submit" value="Log in">
@@ -84,11 +85,12 @@
         <!-- SIGN UP -->
         <li id="signup"><a style="color:white;" id="signup-trigger" href="#">Sign up for free<span class="sr-only">(current)</span></a>
           <div id="signup-content"  style="background-color:rgba(0,0,0, 0.7)">
-            <form class="navbar-form" role="search">
+            <form action="../php/register.php" method="post" class="navbar-form" role="search">
               <fieldset id="inputs">
                 <input id="firstname" type="text" name="firstname" placeholder="First Name*" required> 
                 <input id="lastname" type="text" name="lastname" placeholder="Last Name*" required>
-                <input type="email" name="email" placeholder="Email*" required>
+                <input id="smailId" type="email" name="email" placeholder="Email*" required>
+                <input id="spassId" type="password" name="password" placeholder="Password" required>
                 <h4 style="color:white">Fill if an artist, or leave blank</h4>
                 <input type="text" name="alias" placeholder="Alias (stage name)">
                 <div class="dropdown">
@@ -107,8 +109,8 @@
                 </div>
                 <br>
                 <h4 style="color:white">Fill if a scouter, or leave blank</h4>
-                <input type="text" name="Company" placeholder="Label Name*" required>
-                <input type="text" name="City" placeholder="City*">
+                <input type="text" name="Company" placeholder="Label Name">
+                <input type="text" name="City" placeholder="City">
                 <input type="email" name="Public-Email" placeholder="Public Email">
                 <input type="text" name="Official-Website" placeholder="Official Website">
               </fieldset>
@@ -134,14 +136,14 @@
 	</ol>
 	<!-- What text would we like have written on top of the slide? -->
 	<div class="carousel-inner">
-		<div class="item">
+		<div class="item active">
 			<div class="slide1">
 				<div class="carousel-caption outline">
 					<h1>FIND FRESH AND NEW TALENT, TODAY</h1>
 					<p class="outline">Scout talent online, for free</p>
             <div class="btn-group">
-            <a href="#" class="btn-lg btn-primary">Join as Artist</a>
-            <a href="#" class="btn-lg btn-primary">Join as Scouter</a>
+            <a id="#sl1art" href="#" class="btn-lg btn-primary">Join as Artist</a>
+            <a id="#sl1sct" href="#" class="btn-lg btn-primary">Join as Scouter</a>
           </div>
 				</div>
 			</div>
@@ -152,20 +154,20 @@
 					<h1>ALL KINDS OF MUSICIANS</h1>
 					<p>No more hosting shows to source for talent</p>
           <div class="btn-group">
-            <a href="#" class="btn-lg btn-primary">Join as Artist</a>
-            <a href="#" class="btn-lg btn-primary">Join as Scouter</a>
+            <a id="#sl2art" href="#" class="btn-lg btn-primary">Join as Artist</a>
+            <a id="#sl2sct" href="#" class="btn-lg btn-primary">Join as Scouter</a>
           </div>
 				</div>
 			</div>
 		</div>
-		<div class="item active">
+		<div class="item">
 			<div class="slide3">
 				<div class="carousel-caption">
 					<h1>UNDISCOVERED AND READY</h1>
 					<p>Ready to unleash the music scene, discover them now</p>
           <div class="btn-group">
-            <a href="#" class="btn-lg btn-primary">Join as Artist</a>
-            <a href="#" class="btn-lg btn-primary">Join as Scouter</a>
+            <a id="#sl3art" href="#" class="btn-lg btn-primary">Join as Artist</a>
+            <a id="#sl3sct" href="#" class="btn-lg btn-primary">Join as Scouter</a>
           </div>
 				</div>
 			</div>
@@ -176,8 +178,8 @@
             <h1>CONNECTING ARTISTS AND SCOUTERS NATIONALLY</h1>
             <p bgcolor="yellow">First S.A music platform to gather scouters and artists under a single roof</p>
           <div class="btn-group">
-            <a href="#" class="btn-lg btn-primary">Join as Artist</a>
-            <a href="#" class="btn-lg btn-primary">Join as Scouter</a>
+            <a id="#sl4art" href="#" class="btn-lg btn-primary">Join as Artist</a>
+            <a id="#sl4sct" href="#" class="btn-lg btn-primary">Join as Scouter</a>
           </div>
         </div>
       </div>
